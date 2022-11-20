@@ -1,0 +1,21 @@
+name: CI
+
+on: [ push ]
+
+jobs:
+  Verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-targets
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Run Linter
+        run: npm run lint
+      - name: Run Unit Tests
+        run: npm run test:ci

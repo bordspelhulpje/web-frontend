@@ -1,5 +1,7 @@
 # Bordspelhulpje - web frontend
 
+[![CI](https://github.com/bordspelhulpje/web-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/bordspelhulpje/web-frontend/actions/workflows/ci.yml)
+
 Frontend voor bordspelhulpje.app, geschreven in React.
 
 ## Commando's
