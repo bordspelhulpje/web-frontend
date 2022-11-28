@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './components/Layout'
 
 const Home = React.lazy(() => import('./pages/Home'))
-const Monopolie = React.lazy(() => import('./pages/Monopolie'))
+const TerraformingMars = React.lazy(() => import('./pages/TerraformingMars'))
 
 const routes = [
   {
@@ -15,8 +15,8 @@ const routes = [
         element: <Home />,
       },
       {
-        path: 'monopolie',
-        element: <Monopolie />,
+        path: 'terraforming-mars',
+        element: <TerraformingMars />,
       },
     ],
   },

@@ -12,12 +12,12 @@ describe('<RouterProvider router={router} />', () => {
     })
   })
 
-  it('/monopolie', async () => {
-    const router = route('/monopolie')
+  it('/terraforming-mars', async () => {
+    const router = route('/terraforming-mars')
     render(<RouterProvider router={router} />)
 
     await waitFor(() => {
-      expect(screen.getByRole('heading')).toHaveTextContent('Monopolie')
+      expect(screen.getByRole('heading')).toHaveTextContent('Terraforming Mars')
     })
   })
 })

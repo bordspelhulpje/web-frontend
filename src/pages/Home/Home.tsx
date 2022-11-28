@@ -7,7 +7,7 @@ export const Home: FunctionComponent = () => (
 
     <ul>
       <li>
-        <Link to="/monopolie">Monopolie</Link>
+        <Link to="/terraforming-mars">Terraforming Mars</Link>
       </li>
     </ul>
   </>
